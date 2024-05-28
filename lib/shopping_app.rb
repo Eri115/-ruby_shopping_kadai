@@ -1,6 +1,12 @@
-require_relative "shopping_app/seller"
-require_relative "shopping_app/item"
+require_relative "shopping_app/cart"
 require_relative "shopping_app/customer"
+require_relative "shopping_app/item_manager"
+require_relative "shopping_app/item"
+require_relative "shopping_app/ownable"
+require_relative "shopping_app/seller"
+require_relative "shopping_app/user"
+require_relative "shopping_app/wallet"
+
 
 seller = Seller.new("DICストア")
 10.times{ Item.new(1, "CPU", 40830, seller) }
